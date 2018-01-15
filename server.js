@@ -8,9 +8,7 @@ const additionalBlockedResources = require('./plugins/additionalBlockedResources
 const log = require('./plugins/log');
 
 const options = {
-	pageDoneCheckInterval : 500,
-	pageLoadTimeout: 20000,
-	waitAfterLastRequest: 250,
+	pageLoadTimeout: 1500,
 	chromeFlags: [ '--no-sandbox', '--headless', '--disable-gpu', '--remote-debugging-port=9222', '--hide-scrollbars' ],
 };
 console.log('Starting with options:', options);
